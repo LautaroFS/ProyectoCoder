@@ -1,0 +1,496 @@
+/* --------------------------- ESTILO UNIVERSALES --------------------------- */
+body {
+    margin: 1px;
+    background-color: rgb(158, 154, 154);
+    min-height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+
+/* -------------------------------- NAVEGAOR GENERAL -------------------------------- */
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+nav {
+    margin: 00.25rem;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    border: 3px;
+    border-style: outset;
+    border-color: rgba(224, 92, 4, 0.733);
+    text-align: center;
+    background-image: url(https://bosetti.com.ar/wp-content/uploads/2022/03/taller_mantenimiento_web_bosetti.jpg);
+    background-repeat: round;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    list-style: none;
+    margin-top: 00.5rem;
+}
+
+.nav ul {
+    font-size: medium;
+}
+nav ul li:hover{
+    transform: scale(2);
+    transition: all;
+    transition-duration: 1s;
+}
+/* ---------------------------- ULTIMOS PROYECTOS --------------------------- */
+
+/* ----------------------------- inicio de grid ----------------------------- */
+.bodyIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "contentIndex"
+        "footerIndex ";
+}
+
+.headerIndex {
+    grid-area: header;
+}
+
+.contenedorPadre {
+    grid-area: contentIndex;
+}
+
+.footerIndex {
+    grid-area: footerIndex;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyIndex {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header contentIndex footerIndex"
+            "header contentIndex footerIndex"
+            "header contentIndex footerIndex";
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .bodyIndex {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header contentIndex"
+            "header contentIndex"
+            "header contentIndex"
+            "footerIndex footerIndex";
+    }
+}
+
+
+/* ------------------------------- fin de grid ------------------------------ */
+.contenedorPadre div {
+    background-color: rgb(243, 165, 134);
+    width: 200px;
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fotoproyecto {
+    width: 175px;
+    height: 125px;
+}
+
+.contenedorPadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    text-decoration: underline;
+}
+
+.contenedorHijo3:hover {
+    box-shadow: 0 1rem 0.4rem rgba(12, 12, 12, 0.3);
+    transform: scale(1.25);
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.contenedorHijo2:hover {
+    box-shadow: 0 1rem 0.4rem rgba(12, 12, 12, 0.3);
+    transform: scale(1.25);
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.contenedorHijo1:hover {
+    box-shadow: 0 1rem 0.4rem rgba(12, 12, 12, 0.3);
+    transform: scale(1.25);
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+/* -------------------------------- CONTACTO -------------------------------- */
+/* ----------------------------- inicio de grid ----------------------------- */
+.bodyContac {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "contentCon"
+        "footer";
+}
+
+.headerCon {
+    grid-area: header;
+}
+
+.contenedorContac {
+    grid-area: contentCon;
+}
+
+.footerCon {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyContac {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header contentCon footer"
+            "header contentCon footer"
+            "header contentCon footer";
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .bodyContac {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header contentCon contentCon"
+            "header contentCon contentCon"
+            "header contentCon contentCon"
+            "footer footer footer";
+    }
+}
+
+/* ------------------------------- fin de grid ------------------------------ */
+.contenedorContac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.contac:hover {
+    box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
+    transform: scale(1.25);
+    transition: all;
+    transition-duration: 2s;
+}
+
+.boton:hover {
+    box-shadow: 0 0.5rem 0.4rem rgba(12, 12, 12, 0.3);
+    transform: scale(1.25);
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.contenedorContac div {
+    background-color: rgb(243, 165, 134);
+    width: 225px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+/* -------------------------------- NOSOTROS -------------------------------- */
+/* ----------------------------- inicio de grid ----------------------------- */
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.content4 {
+    grid-area: content4;
+}
+
+.bodyNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "headerNos"
+        "historia"
+        "footer";
+}
+
+.headerNos {
+    grid-area: headerNos;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.footerNos {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyNosotros {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "headerNos historia footer"
+            "headerNos historia footer"
+            "headerNos historia footer";
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .bodyNosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "headerNos historia"
+            "headerNos historia"
+            "headerNos historia"
+            "footer footer";
+    }
+}
+
+/* ------------------------------- fin de grid ------------------------------ */
+.fotoEmpresa {
+    width: 150px;
+    height: 100px;
+}
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------ PROFESIONALES ----------------------------- */
+/* ----------------------------- inicio de grid ----------------------------- */
+.bodyProf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "profesionales"
+        "footer";
+}
+
+.headerProf {
+    grid-area: header;
+}
+
+.profesionales {
+    grid-area: profesionales;
+}
+
+.footerProf {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyProf {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header profesionales footer"
+            "header profesionales footer"
+            "header profesionales footer";
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .bodyProf {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header profesionales profesionales"
+            "header profesionales profesionales"
+            "header profesionales profesionales"
+            "footer footer footer";
+    }
+}
+
+/* ------------------------------- fin de grid ------------------------------ */
+.profesionales div {
+    background-color: rgb(243, 165, 134);
+    width: 250px;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profesionales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profesionales div:hover {
+    box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
+    transform: scale(1.25);
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.fotoProf {
+    width: 150px;
+    height: 100px;
+}
+
+/* ------------------------------- BENEFICIOS ------------------------------- */
+/* ----------------------------- inicio de grid ----------------------------- */
+.bodyBen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "section"
+        "footer";
+}
+
+.headerBen {
+    grid-area: header;
+}
+
+.beneficios {
+    grid-area: section;
+}
+
+.footerBen {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyBen {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header section footer"
+            "header section footer"
+            "header section footer";
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .bodyBen {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header section section"
+            "header section section"
+            "header section section"
+            "footer footer footer";
+    }
+}
+
+/* ------------------------------- fin de grid ------------------------------ */
+.tabla {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: small;
+    margin-top: 2rem;
+}
+
+.tabla th,
+td {
+    border: 3px solid;
+    border-color: rgba(233, 156, 93, 0.836);
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------- FOOTER GENERAL --------------------------------- */
+footer {
+    padding: 1em;
+    background-color: rgba(235, 90, 6, 0.89);
+    border: 3px solid rgba(0, 0, 0, 0.493);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    font-size: medium;
+}
+
+footer ul li {
+    color: black;
+    text-align: justify;
+    display: inline-block;
+    margin-right: 1rem;
+}
+footer ul li:hover{
+    transform: scale(1.25);
+    transition: all;
+    transition-duration: 1s;
+}
