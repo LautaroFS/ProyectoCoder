@@ -114,18 +114,12 @@ nav ul li:hover{
 
 /* ------------------------------- fin de grid ------------------------------ */
 .contenedorPadre div {
-    background-color: rgb(243, 165, 134);
     width: 200px;
-    border-radius: 2rem;
-    text-align: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .fotoproyecto {
-    width: 75px;
-    height: 50px;
+    width: 200px;
+    height: 150px;
 }
 
 .contenedorPadre {
@@ -377,7 +371,7 @@ section div {
 /* ------------------------------- fin de grid ------------------------------ */
 .profesionales div {
     background-color: rgb(243, 165, 134);
-    width: 250px;
+    width: 225px;
     border-radius: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -399,8 +393,8 @@ section div {
 }
 
 .fotoProf {
-    width: 150px;
-    height: 100px;
+    width: 125px;
+    height: 75px;
 }
 
 /* ------------------------------- BENEFICIOS ------------------------------- */

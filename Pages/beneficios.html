@@ -16,53 +16,65 @@
 <body class="bodyBen">
     <!-- ------------------------------ NAVEGADOR ------------------------------ -->
     <header class="headerBen">
-        <nav>
-                <img src="../Assets/favicom.jpg" alt="logo" class="logo">
-                <h1>LUIS GONZALEZ S.A.</h1>
-                <ul class="nav nav-pills navIndex">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../Pages/contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../Pages/nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../Pages/profesionales.html">PROFESIONALES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../Pages/beneficios.html">BENEFICIOS</a>
-                    </li>
-                  </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Pages/profesionales.html">PROFESIONALES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Pages/beneficios.html">BENEFICIOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <img src="../Assets/favicom.jpg" alt="logo" class="logo">
+        <h1>LUIS GONZALEZ S.A.</h1>>
     </header>
     <!-- ----------------------------- BENEFICIOS ------------------------------ -->
     <section class="beneficios">
-        <h3 class="titulo">BENEFICIOS</h3>
-        <table class="table table-success table-striped">
-            <tr>
-                <th>PACK</th>
-                <th>ELEMENTOS</th>
-                <th>DESCUENTO</th>
-            </tr>
-            <tr>
-                <th>PACK 1</tH>
+        <h3 class="titulo fs-4">BENEFICIOS</h3>
+        <table class="table table-warning">
+            <thead>
+              <tr>
+                <th scope="col">PACK</th>
+                <th scope="col">ELEMENTOS</th>
+                <th scope="col">DESCUENTOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">PACK 1</th>
                 <td>Contratando este pack incluira la mano de obra juntos a los materiales</td>
                 <td>Tendras un 15% de descuento en los costos de los materiales</td>
-            </tr>
-            <tr>
-                <th>PACK 2</th>
+              </tr>
+              <tr>
+                <th scope="row">PACK 2</th>
                 <td>Contratando este pack incluira mano de obra, materiales y el pintado de toda la contruccion</td>
                 <td>Las pinturas son de regalo</td>
-            </tr>
-            <tr>
-                <th>PACK 3</th>
+              </tr>
+              <tr>
+                <th scope="row">PACK 3</th>
                 <td>Este pack constiste la construccion desde cero de dicha estrucutura</td>
                 <td>En este pack la mano de obra ira de regalo</td>
-            </tr>
-        </table>
+              </tr>
+            </tbody>
+          </table>
     </section>
 
     <!-- ------------------------------- FOOTER -------------------------------- -->
