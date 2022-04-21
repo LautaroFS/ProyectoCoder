@@ -1,0 +1,103 @@
+/* --------------------------- ESTILO UNIVERSALES --------------------------- */
+body {
+    margin: 1px;
+    background-color: rgb(185, 182, 182);
+    min-height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: 'BhuTuka Expanded One', cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+
+section div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* --------------------------- NAVEGADOR GENERTAL --------------------------- */
+header {
+    border: 3px;
+    border-style: outset;
+    border-color: rgba(224, 92, 4, 0.733);
+    text-align: center;
+    background-image: url(https://bosetti.com.ar/wp-content/uploads/2022/03/taller_mantenimiento_web_bosetti.jpg);
+    background-repeat: round;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    nav {
+        margin: 00.25rem;
+
+        ul {
+            font-size: medium;
+
+            li {
+                color: rgb(0, 0, 0);
+                text-align: center;
+                list-style: none;
+                margin-top: 00.5rem;
+
+                &:hover {
+                    transform: scale(1.25);
+                    transition: all;
+                    transition-duration: 1s;
+                }
+            }
+        }
+    }
+}
+
+/* --------------------------------- FOOTER GENERAL --------------------------------- */
+footer {
+    padding: 1em;
+    background-color: rgba(235, 90, 6, 0.89);
+    border: 3px solid rgba(0, 0, 0, 0.493);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        font-size: medium;
+
+        li {
+            color: black;
+            text-align: justify;
+            display: inline-block;
+            margin-right: 1rem;
+
+            &:hover {
+                transform: scale(1.25);
+                transition: all;
+                transition-duration: 1s;
+            }
+        }
+    }
+}

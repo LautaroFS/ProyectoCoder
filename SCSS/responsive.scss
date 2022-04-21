@@ -1,0 +1,240 @@
+/* ---------------------------------- GRID INDEX --------------------------------- */
+.bodyIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "contentIndex"
+        "footerIndex ";
+}
+
+.headerIndex {
+    grid-area: header;
+}
+
+.contenedorPadre {
+    grid-area: contentIndex;
+}
+
+.footerIndex {
+    grid-area: footerIndex;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyIndex {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header contentIndex footerIndex"
+            "header contentIndex footerIndex"
+            "header contentIndex footerIndex";
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .bodyIndex {
+        width: 576px;
+        grid-template-columns: 276px 300px;
+        grid-template-areas:
+            "header contentIndex"
+            "header contentIndex"
+            "header contentIndex"
+            "footerIndex footerIndex";
+    }
+}
+/* -------------------------------- GRID CONTACTO -------------------------------- */
+.bodyContac {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "contentCon"
+        "footer";
+}
+
+.headerCon {
+    grid-area: header;
+}
+
+.contenedorContac {
+    grid-area: contentCon;
+}
+
+.footerCon {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyContac {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header contentCon footer"
+            "header contentCon footer"
+            "header contentCon footer";
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .bodyContac {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header contentCon contentCon"
+            "header contentCon contentCon"
+            "header contentCon contentCon"
+            "footer footer footer";
+    }
+}
+/* -------------------------------- GRID NOSOTROS -------------------------------- */
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.content4 {
+    grid-area: content4;
+}
+
+.bodyNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "headerNos"
+        "historia"
+        "footer";
+}
+
+.headerNos {
+    grid-area: headerNos;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.footerNos {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyNosotros {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "headerNos historia footer"
+            "headerNos historia footer"
+            "headerNos historia footer";
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .bodyNosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "headerNos historia"
+            "headerNos historia"
+            "headerNos historia"
+            "footer footer";
+    }
+}
+/* ------------------------------ GRID PROFESIONALES ----------------------------- */
+.bodyProf {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "profesionales"
+        "footer";
+}
+
+.headerProf {
+    grid-area: header;
+}
+
+.profesionales {
+    grid-area: profesionales;
+}
+
+.footerProf {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyProf {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header profesionales footer"
+            "header profesionales footer"
+            "header profesionales footer";
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .bodyProf {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header profesionales profesionales"
+            "header profesionales profesionales"
+            "header profesionales profesionales"
+            "footer footer footer";
+    }
+}
+/* ------------------------------- GRID BENEFICIOS ------------------------------- */
+.bodyBen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "section"
+        "footer";
+}
+
+.headerBen {
+    grid-area: header;
+}
+
+.beneficios {
+    grid-area: section;
+}
+
+.footerBen {
+    grid-area: footer;
+}
+
+@media only screen and (max-width:768px) {
+    .bodyBen {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header section footer"
+            "header section footer"
+            "header section footer";
+    }
+    .navIndex{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .bodyBen {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header section section"
+            "header section section"
+            "header section section"
+            "footer footer footer";
+    }
+    .navIndex{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,128 @@
+@import "estructurageneral.scss";
+@import "responsive.scss";
+
+/* ---------------------------------- INDEX --------------------------------- */
+.contenedorPadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        width: 200px;
+
+        .fotoproyecto {
+            width: 200px;
+            height: 150px;
+        }
+    }
+}
+
+/* -------------------------------- CONTACTO -------------------------------- */
+.contenedorContac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        div {
+            background-color: rgb(243, 165, 134);
+            width: 250px;
+            border-radius: 2rem;
+            text-align: center;
+        }
+
+        .contacto {
+            &:hover {
+                box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
+                transform: scale(1.25);
+                transition: all;
+                transition-duration: 2s;
+            }
+
+            .botones {
+                &:hover {
+                    box-shadow: 0 0.5rem 0.4rem rgba(12, 12, 12, 0.3);
+                    transform: scale(1.25);
+                    transition: all;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------- NOSOTROS -------------------------------- */
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .fotoEmpresa {
+            width: 150px;
+            height: 100px;
+        }
+    }
+}
+
+/* ------------------------------ PROFESIONALES ----------------------------- */
+.profesionales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: rgb(243, 165, 134);
+        width: 225px;
+        border-radius: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .fotoProf {
+            width: 125px;
+            height: 75px;
+        }
+
+
+        &:hover {
+            box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
+            transform: scale(1.25);
+            transition-property: all;
+            transition-duration: 2s;
+
+        }
+    }
+}
+
+/* ------------------------------- BENEFICIOS ------------------------------- */
+.tabla {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: small;
+    margin-top: 2rem;
+
+    .beneficios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    th {
+        td {
+            border: 3px solid;
+            border-color: rgba(233, 156, 93, 0.836);
+        }
+    }
+}
