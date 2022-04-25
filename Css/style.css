@@ -1,3 +1,4 @@
+/* ---------------------------------- MIXIM --------------------------------- */
 /* --------------------------- ESTILO UNIVERSALES --------------------------- */
 body {
   margin: 1px;
@@ -20,14 +21,14 @@ a {
   text-decoration: underline;
 }
 
-section div {
+section div, section .profesionales div .nuevoProf, .profesionales div section .nuevoProf {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 /* --------------------------- NAVEGADOR GENERTAL --------------------------- */
 header {
-  border: 3px;
+  border: 3px solid rgba(0, 0, 0, 0.493);
   border-style: outset;
   border-color: rgba(224, 92, 4, 0.733);
   text-align: center;
@@ -69,7 +70,7 @@ header nav ul li:hover {
 /* --------------------------------- FOOTER GENERAL --------------------------------- */
 footer {
   padding: 1em;
-  background-color: rgba(235, 90, 6, 0.89);
+  background-color: rgba(224, 92, 4, 0.733);
   border: 3px solid rgba(0, 0, 0, 0.493);
   display: flex;
   flex-direction: row;
@@ -279,6 +280,7 @@ footer ul li:hover {
     flex-direction: column;
   }
 }
+/* ---------------------------------- MIXIM --------------------------------- */
 /* ---------------------------------- INDEX --------------------------------- */
 .contenedorPadre {
   display: flex;
@@ -286,10 +288,10 @@ footer ul li:hover {
   align-items: center;
   justify-content: center;
 }
-.contenedorPadre div {
+.contenedorPadre div, .contenedorPadre .profesionales div .nuevoProf, .profesionales div .contenedorPadre .nuevoProf {
   width: 200px;
 }
-.contenedorPadre div .fotoproyecto {
+.contenedorPadre div .fotoproyecto, .profesionales div .contenedorPadre .nuevoProf .fotoproyecto {
   width: 200px;
   height: 150px;
 }
@@ -301,19 +303,20 @@ footer ul li:hover {
   align-items: center;
   justify-content: center;
 }
-.contenedorContac form div {
+.contenedorContac form div, .contenedorContac form .profesionales div .nuevoProf, .profesionales div .contenedorContac form .nuevoProf {
   background-color: rgb(243, 165, 134);
-  width: 250px;
   border-radius: 2rem;
   text-align: center;
+  width: 250px;
+  height: 50px;
 }
-.contenedorContac form .contacto:hover {
+.contenedorContac .contacto:hover {
   box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
   transform: scale(1.25);
   transition: all;
   transition-duration: 2s;
 }
-.contenedorContac form .contacto .botones:hover {
+.contenedorContac .contacto .botones:hover {
   box-shadow: 0 0.5rem 0.4rem rgba(12, 12, 12, 0.3);
   transform: scale(1.25);
   transition: all;
@@ -327,14 +330,14 @@ footer ul li:hover {
   justify-content: center;
   align-items: center;
 }
-.historia div {
+.historia div, .historia .profesionales div .nuevoProf, .profesionales div .historia .nuevoProf {
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.historia div .fotoEmpresa {
+.historia div .fotoEmpresa, .profesionales div .historia .nuevoProf .fotoEmpresa {
   width: 150px;
   height: 100px;
 }
@@ -346,7 +349,7 @@ footer ul li:hover {
   justify-content: center;
   align-items: center;
 }
-.profesionales div {
+.profesionales div, .profesionales div .nuevoProf {
   background-color: rgb(243, 165, 134);
   width: 225px;
   border-radius: 2rem;
@@ -354,11 +357,16 @@ footer ul li:hover {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.profesionales div .nuevoProf {
+  background-color: rgb(7, 128, 3);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .profesionales div .fotoProf {
   width: 125px;
   height: 75px;
 }
-.profesionales div:hover {
+.profesionales div:hover, .profesionales div .nuevoProf:hover {
   box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
   transform: scale(1.25);
   transition-property: all;

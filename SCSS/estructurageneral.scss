@@ -1,3 +1,4 @@
+@import "variables.scss";
 /* --------------------------- ESTILO UNIVERSALES --------------------------- */
 body {
     margin: 1px;
@@ -28,9 +29,9 @@ section div {
 
 /* --------------------------- NAVEGADOR GENERTAL --------------------------- */
 header {
-    border: 3px;
+    border: $border;
     border-style: outset;
-    border-color: rgba(224, 92, 4, 0.733);
+    border-color: $colorNavFoo;
     text-align: center;
     background-image: url(https://bosetti.com.ar/wp-content/uploads/2022/03/taller_mantenimiento_web_bosetti.jpg);
     background-repeat: round;
@@ -76,8 +77,8 @@ header {
 /* --------------------------------- FOOTER GENERAL --------------------------------- */
 footer {
     padding: 1em;
-    background-color: rgba(235, 90, 6, 0.89);
-    border: 3px solid rgba(0, 0, 0, 0.493);
+    background-color: $colorNavFoo;
+    border:$border;
     display: flex;
     flex-direction: row;
     justify-content: center;
