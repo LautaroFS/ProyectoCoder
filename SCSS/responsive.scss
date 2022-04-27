@@ -1,3 +1,4 @@
+@import "variables";
 /* ---------------------------------- GRID INDEX --------------------------------- */
 .bodyIndex {
     display: grid;
@@ -34,7 +35,7 @@
 @media only screen and (max-width:576px) {
     .bodyIndex {
         width: 576px;
-        grid-template-columns: 276px 300px;
+        grid-template-columns: 276px 250px;
         grid-template-areas:
             "header contentIndex"
             "header contentIndex"

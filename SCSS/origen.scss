@@ -91,9 +91,9 @@
         margin-bottom: 2rem;
         .nuevoProf{
             @extend div;
-            background-color: rgb(7, 128, 3);
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
+            color: rgb(7, 128, 3);
+            margin: 0rem 1.25rem 0rem 1.25rem;
+            width: 175px;
             }
             .fotoProf {
             width: 125px;

@@ -1,8 +1,7 @@
-/* ---------------------------------- MIXIM --------------------------------- */
+/**** ---------------------------------- MIXIM --------------------------------- ****/
 /* --------------------------- ESTILO UNIVERSALES --------------------------- */
 body {
   margin: 1px;
-  background-color: rgb(185, 182, 182);
   min-height: 100vh;
 }
 
@@ -81,6 +80,21 @@ footer ul {
   list-style: none;
   font-size: medium;
 }
+footer ul .boton-POLITICA {
+  color: #000000;
+}
+footer ul .boton-UBICACION {
+  color: #ff0000;
+}
+footer ul .boton-INSTAGRAM {
+  color: #a200ff;
+}
+footer ul .boton-FACEBOOK {
+  color: #0004f1;
+}
+footer ul .boton-TWITTER {
+  color: #04f8d0;
+}
 footer ul li {
   color: black;
   text-align: justify;
@@ -93,6 +107,7 @@ footer ul li:hover {
   transition-duration: 1s;
 }
 
+/**** ---------------------------------- MIXIM --------------------------------- ****/
 /* ---------------------------------- GRID INDEX --------------------------------- */
 .bodyIndex {
   display: grid;
@@ -122,7 +137,7 @@ footer ul li:hover {
 @media only screen and (max-width: 576px) {
   .bodyIndex {
     width: 576px;
-    grid-template-columns: 276px 300px;
+    grid-template-columns: 276px 250px;
     grid-template-areas: "header contentIndex" "header contentIndex" "header contentIndex" "footerIndex footerIndex";
   }
 }
@@ -280,7 +295,7 @@ footer ul li:hover {
     flex-direction: column;
   }
 }
-/* ---------------------------------- MIXIM --------------------------------- */
+/**** ---------------------------------- MIXIM --------------------------------- ****/
 /* ---------------------------------- INDEX --------------------------------- */
 .contenedorPadre {
   display: flex;
@@ -358,9 +373,9 @@ footer ul li:hover {
   margin-bottom: 2rem;
 }
 .profesionales div .nuevoProf {
-  background-color: rgb(7, 128, 3);
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  color: rgb(7, 128, 3);
+  margin: 0rem 1.25rem 0rem 1.25rem;
+  width: 175px;
 }
 .profesionales div .fotoProf {
   width: 125px;

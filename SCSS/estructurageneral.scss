@@ -2,7 +2,6 @@
 /* --------------------------- ESTILO UNIVERSALES --------------------------- */
 body {
     margin: 1px;
-    background-color: rgb(185, 182, 182);
     min-height: 100vh;
 }
 
@@ -87,7 +86,18 @@ footer {
     ul {
         list-style: none;
         font-size: medium;
-
+        $footer:(
+        POLITICA: #000000,
+        UBICACION: #ff0000,
+        INSTAGRAM: #a200ff,
+        FACEBOOK: #0004f1,
+        TWITTER: #04f8d0,
+        );
+        @each $nombres,$color in $footer {
+            .boton-#{$nombres}{
+             color: $color;
+            }
+        }
         li {
             color: black;
             text-align: justify;
