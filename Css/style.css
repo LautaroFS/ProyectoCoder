@@ -128,7 +128,7 @@ footer ul li:hover {
 
 @media only screen and (max-width: 768px) {
   .bodyIndex {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "header contentIndex footerIndex" "header contentIndex footerIndex" "header contentIndex footerIndex";
   }
@@ -301,6 +301,9 @@ footer ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.contenedorPadre div {
+  width: 150px;
 }
 .contenedorPadre div .fotoproyecto {
   width: 150px;
