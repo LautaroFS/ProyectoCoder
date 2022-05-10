@@ -15,12 +15,11 @@ a {
 }
 
 .titulo {
-  font-family: "BhuTuka Expanded One", cursive;
   text-align: center;
   text-decoration: underline;
 }
 
-section div, section .profesionales div .nuevoProf, .profesionales div section .nuevoProf {
+section div {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -84,7 +83,7 @@ footer ul .boton-POLITICA {
   color: #000000;
 }
 footer ul .boton-UBICACION {
-  color: #ff0000;
+  color: #ff00dd;
 }
 footer ul .boton-INSTAGRAM {
   color: #a200ff;
@@ -92,7 +91,7 @@ footer ul .boton-INSTAGRAM {
 footer ul .boton-FACEBOOK {
   color: #0004f1;
 }
-footer ul .boton-TWITTER {
+footer ul .boton-LinkedIn {
   color: #04f8d0;
 }
 footer ul li {
@@ -137,7 +136,7 @@ footer ul li:hover {
 @media only screen and (max-width: 576px) {
   .bodyIndex {
     width: 576px;
-    grid-template-columns: 276px 250px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "header contentIndex" "header contentIndex" "header contentIndex" "footerIndex footerIndex";
   }
 }
@@ -303,12 +302,9 @@ footer ul li:hover {
   align-items: center;
   justify-content: center;
 }
-.contenedorPadre div, .contenedorPadre .profesionales div .nuevoProf, .profesionales div .contenedorPadre .nuevoProf {
-  width: 200px;
-}
-.contenedorPadre div .fotoproyecto, .profesionales div .contenedorPadre .nuevoProf .fotoproyecto {
-  width: 200px;
-  height: 150px;
+.contenedorPadre div .fotoproyecto {
+  width: 150px;
+  height: 100px;
 }
 
 /* -------------------------------- CONTACTO -------------------------------- */
@@ -318,25 +314,6 @@ footer ul li:hover {
   align-items: center;
   justify-content: center;
 }
-.contenedorContac form div, .contenedorContac form .profesionales div .nuevoProf, .profesionales div .contenedorContac form .nuevoProf {
-  background-color: rgb(243, 165, 134);
-  border-radius: 2rem;
-  text-align: center;
-  width: 250px;
-  height: 50px;
-}
-.contenedorContac .contacto:hover {
-  box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
-  transform: scale(1.25);
-  transition: all;
-  transition-duration: 2s;
-}
-.contenedorContac .contacto .botones:hover {
-  box-shadow: 0 0.5rem 0.4rem rgba(12, 12, 12, 0.3);
-  transform: scale(1.25);
-  transition: all;
-  transition-duration: 0.5s;
-}
 
 /* -------------------------------- NOSOTROS -------------------------------- */
 .historia {
@@ -345,14 +322,14 @@ footer ul li:hover {
   justify-content: center;
   align-items: center;
 }
-.historia div, .historia .profesionales div .nuevoProf, .profesionales div .historia .nuevoProf {
+.historia div {
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.historia div .fotoEmpresa, .profesionales div .historia .nuevoProf .fotoEmpresa {
+.historia div .fotoEmpresa {
   width: 150px;
   height: 100px;
 }
@@ -364,28 +341,8 @@ footer ul li:hover {
   justify-content: center;
   align-items: center;
 }
-.profesionales div, .profesionales div .nuevoProf {
+.profesionales .card {
   background-color: rgb(243, 165, 134);
-  width: 225px;
-  border-radius: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.profesionales div .nuevoProf {
-  color: rgb(7, 128, 3);
-  margin: 0rem 1.25rem 0rem 1.25rem;
-  width: 175px;
-}
-.profesionales div .fotoProf {
-  width: 125px;
-  height: 75px;
-}
-.profesionales div:hover, .profesionales div .nuevoProf:hover {
-  box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
-  transform: scale(1.25);
-  transition-property: all;
-  transition-duration: 2s;
 }
 
 /* ------------------------------- BENEFICIOS ------------------------------- */

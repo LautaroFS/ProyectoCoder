@@ -51,47 +51,40 @@
     </header>
     <!-- ------------------------------ CONTACTO ------------------------------- -->
     <section class="contenedorContac">
-        <h3 class="titulo fs-4">TE CONTACTAREMOS</h3>
-        <form action="/action_page.php" method="get">
-            <div class="contacto">
-                <label for="fname">NOMBRE Y APELLIDO:</label>
-                <input type="text" id="fname" name="fname">
-            </div>
-            <div class="contacto">
-                <label for="">FECHA DE NACIMIENTO:</label>
-                <input type="date" id="lname" name="lname">
-            </div>
-            <div class="contacto">
-                <label for=""> ESTADO CIVIL: <select name="ESTADO CIVIL" id="">
-                        <option value="soltero">SOLTERO</option>
-                        <option value="casado">CASADO</option>
-                        <option value="divorciado">DIVORCIADO</option>
-                    </select>
-                </label>
-            </div>
-            <div class="contacto">
-                <label for="numero">TELFONO:</label>
-                <input type="numer">
-            </div>
-            <div class="contacto">
-                <label for="">¿DESERIA RECIBIR NEWSLETTER?</label>
-                <input type="checkbox" name="" id="">
-            </div>
-            <div class="contacto">
-                <label for="text">CONSULTA:</label>
-                <input type="">
-            </div>
-            <div class="botones">
-                <button class="boton" type="submit" value="Submit">ENVIAR</button>
-                <button class="boton" type="reset" value="Reset">LIMPIAR</button>
-            </div>
+        <h3 class="titulo fs-5 text-center">CONTACTO</h3>
+        <form action="">
+        <div>
+            <label for="exampleDataList" class="form-label">Consulta</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Tipo de construccion">
+            <datalist id="datalistOptions">
+                <option value="Construccion de cero">
+                <option value="Refaccion">
+                <option value="Construccion de gran magnitud">
+            </datalist>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">+54</span>
+            <input type="number" class="form-control" placeholder="Numero" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Su consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary boton" type="button submit" value="Submit">Enviar</button>
+            <button class="btn btn-primary boton" type="button reset" value="Reset">Borrar</button>
+          </div>
         </form>
     </section>
     <!-- ------------------------------- FOOTER -------------------------------- -->
     <footer class="footerCon">
         <ul>
             <li>
-                <a href=""  class="boton-POLITICA">POLITICA</a>
+                <a href="" class="boton-POLITICA">POLITICA</a>
             </li>
             <li>
                 <a href="" class="boton-UBICACION">UBICACION</a>

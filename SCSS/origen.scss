@@ -10,11 +10,9 @@
     justify-content: center;
 
     div {
-        width: 200px;
-
         .fotoproyecto {
-            width: 200px;
-            height: 150px;
+            width: 150px;
+            height: 100px;
         }
     }
 }
@@ -25,35 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    form {
-        div {
-            background-color: $div;
-            border-radius: 2rem;
-            text-align: center;
-            @include tamaño (250px, 50px)}
-        }
-
-        .contacto {
-            &:hover {
-                box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
-                transform: scale(1.25);
-                transition: all;
-                transition-duration: 2s;
-            }
-
-            .botones {
-                &:hover {
-                    box-shadow: 0 0.5rem 0.4rem rgba(12, 12, 12, 0.3);
-                    transform: scale(1.25);
-                    transition: all;
-                    transition-duration: 0.5s;
-                }
-            }
-        }
-    }
-
-
+}
 /* -------------------------------- NOSOTROS -------------------------------- */
 .historia {
     display: flex;
@@ -82,29 +52,8 @@
     justify-content: center;
     align-items: center;
 
-    div {
+    .card {
         background-color: $div;
-        width: 225px;
-        border-radius: 2rem;
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        .nuevoProf{
-            @extend div;
-            color: rgb(7, 128, 3);
-            margin: 0rem 1.25rem 0rem 1.25rem;
-            width: 175px;
-            }
-            .fotoProf {
-            width: 125px;
-            height: 75px;
-        }
-        &:hover {
-            box-shadow: 0 0.75rem 0.4rem rgba(12, 12, 12, 0.3);
-            transform: scale(1.25);
-            transition-property: all;
-            transition-duration: 2s;
-        }
         }
     }
 

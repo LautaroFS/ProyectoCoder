@@ -15,7 +15,6 @@ a {
 }
 
 .titulo {
-    font-family: 'BhuTuka Expanded One', cursive;
     text-align: center;
     text-decoration: underline;
 }
@@ -88,10 +87,10 @@ footer {
         font-size: medium;
         $footer:(
         POLITICA: #000000,
-        UBICACION: #ff0000,
+        UBICACION: #ff00dd,
         INSTAGRAM: #a200ff,
         FACEBOOK: #0004f1,
-        TWITTER: #04f8d0,
+        LinkedIn: #04f8d0,
         );
         @each $nombres,$color in $footer {
             .boton-#{$nombres}{
