@@ -346,21 +346,11 @@ footer ul li:hover {
 }
 
 /* ------------------------------- BENEFICIOS ------------------------------- */
-.tabla {
-  border-collapse: collapse;
-  text-align: center;
-  font-size: small;
-  margin-top: 2rem;
-}
-.tabla .beneficios {
+.beneficios {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.tabla th td {
-  border: 3px solid;
-  border-color: rgba(233, 156, 93, 0.836);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -58,23 +58,9 @@
     }
 
 /* ------------------------------- BENEFICIOS ------------------------------- */
-.tabla {
-    border-collapse: collapse;
-    text-align: center;
-    font-size: small;
-    margin-top: 2rem;
-
     .beneficios {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-    th {
-        td {
-            border: 3px solid;
-            border-color: rgba(233, 156, 93, 0.836);
-        }
-    }
-}
