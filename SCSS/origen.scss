@@ -10,14 +10,16 @@
     justify-content: center;
 
     div {
-        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .fotoproyecto {
             width: 150px;
             height: 100px;
         }
     }
 }
-
 /* -------------------------------- CONTACTO -------------------------------- */
 .contenedorContac {
     display: flex;
@@ -52,30 +54,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    .fotoProf{
+        height: 150px;
+    }
     .card {
         background-color: $div;
         }
     }
 
 /* ------------------------------- BENEFICIOS ------------------------------- */
-.tabla {
-    border-collapse: collapse;
-    text-align: center;
-    font-size: small;
-    margin-top: 2rem;
-
-    .beneficios {
+.beneficios {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-    th {
-        td {
-            border: 3px solid;
-            border-color: rgba(233, 156, 93, 0.836);
-        }
-    }
-}
