@@ -135,8 +135,7 @@ footer ul li:hover {
 }
 @media only screen and (max-width: 576px) {
   .bodyIndex {
-    width: 576px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1.5fr;
     grid-template-areas: "header contentIndex" "header contentIndex" "header contentIndex" "footerIndex footerIndex";
   }
 }
