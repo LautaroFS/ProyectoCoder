@@ -19,6 +19,11 @@ a {
   text-decoration: underline;
 }
 
+.titulo1 {
+  text-align: center;
+  color: #fd7e14;
+}
+
 section div {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -135,7 +140,7 @@ footer ul li:hover {
 }
 @media only screen and (max-width: 576px) {
   .bodyIndex {
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "header contentIndex" "header contentIndex" "header contentIndex" "footerIndex footerIndex";
   }
 }
@@ -300,12 +305,6 @@ footer ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.contenedorPadre div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .contenedorPadre div .fotoproyecto {
   width: 150px;
